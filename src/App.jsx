@@ -10,7 +10,11 @@ setSelection(option)
     {label:'Green', value:'green'},
     {label:'Blue', value:'blue'},
   ]
- return <DropDown options={options} value={selection} onChange={handleSelection}/>
+ return (<div className="flex">
+ <DropDown options={options} value={selection} onChange={handleSelection}/>
+ <DropDown options={options} value={selection} onChange={handleSelection}/>
+ </div>
+)
 }
 
 export default App;
